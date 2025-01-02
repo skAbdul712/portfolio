@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Abdul Rabbani - Portfolio</title>
+   <link rel="stylesheet" href="file:///C:/Users/RABBANI/Desktop/resume%20portfolio/assests/css/styles.css">
+    <link rel="stylesheet" href="file:///C:/Users/RABBANI/Desktop/resume%20portfolio/assests/css/animations.css">
+<style>
+        body {
+    background-size: cover;
+    overflow: smooth;
+}
+
+        .header {
+            background-color: #081b29;
+            color: white;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .header .profile-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background: url('file:///C:/Users/RABBANI/Desktop/resume%20portfolio/assests/images/logo.png') no-repeat center;
+            background-size: 100%;
+            margin-right: 20px;
+        }
+
+        .header .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        nav.navbar {
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        nav.navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        nav.navbar ul li {
+            margin-left: 35px;
+        }
+
+        nav.navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav.navbar ul li a:hover {
+            color: #ffcc00;
+        }
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0 10%;
+    background: none; /* Clear background for split layout */
+    position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('file:///C:/Users/RABBANI/Desktop/resume%20portfolio/assests/images/Screenshot_2021_0803_143838.png.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.home .content {
+    z-index: 1; /* Ensure content appears above the background */
+    max-width: 50%; /* Restrict content to the left half */
+}
+
+.home h1, 
+.home h3, 
+.home p {
+    margin: 10px 0;
+    color: #333; /* Adjust text color for readability */
+}
+
+.home a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #0077b5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home a:hover {
+    background-color: #ffcc00;
+}
+               .home-content{
+        max-width:600px;
+        }
+        .home-content h1{
+        font-size:56px;
+        font-weight: 700;
+        }
+
+        
+        .home-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .home-content a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-content a:hover {
+            background-color: #ffcc00;
+        }
+        .about{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .about .content {
+    z-index: 1; /* Ensure content appears above the background */
+    max-width: 50%; /* Restrict content to the left half */
+}
+
+       .about-content h1{
+        font-size:56px;
+        font-weight: 700;
+        }
+         .about-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+          .about-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+ .about-content a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+
+
+
+        main section {
+            padding: 50px 20px;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+
+        main section:nth-child(even) {
+            background-color: #eaf2f8;
+        }
+
+        main section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .resume-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-link:hover {
+            background-color: #ffcc00;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0077b5;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        main section {
+            animation: slideUp 1s;
+        }
+    </style>
+
+  </head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shaik Abdul Rabbani</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="profile-container">
+        <div class="profile-pic"></div>
+        <a href="index.html" class="logo">Rabbani</a>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="nav-home">Home</a></li>
+            <li><a href="about.html" class="nav-about">About</a></li>
+            <li><a href="bio.html" class="nav-bio">Bio</a></li>
+            <li><a href="projects.html" class="nav-projects">Projects</a></li>
+            <li><a href="contact.html" class="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about">
+<div class=" home-content">
+            <h1>I'm Shaik Abdul Rabbani</h1>
+            <h3>Front-End Developer</h3>
+            <p>A career objective for a front-end developer fresher should highlight your eagerness to learn, willingness to contribute, and desire to gain experience. It should also highlight any relevant skills or qualities that make you a good fit for the position.</p>
+            <a href="#">Hire Me</a>
+            <a href="#">Let's Talk</a>
+        </div>    </section>
+</main>
+  <script src="components/script.js"></script> 
+<footer>
+    <p>&copy; 2024 Shaik Abdul Rabbani. All rights reserved.</p>
+</footer>
+</body>
+</html>     
